@@ -1,0 +1,6 @@
+.in {
+    width: calc(100vw - 260px);
+    flex-grow: 1;
+    margin-top: auto;
+    background-color: green;
+}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Outfit", system-ui;
+}
+
+/* =============================Running-Page============================== */
+
+/* .pg{
+   display: flex;
+   width: 100vw;
+   .right{
+    width: calc(100vw - 288px);
+    background-color: #f2f3f7;
+    user-select: none;
+
+   }
+   
+} */
+
+
+/* ============================Side-bar=================================== */
+.sidebar {
+    height: 100vh;
+    width: 260px;
+    background-color: var(--blue);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .Nav-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1em;
+
+        header {
+            margin-top: 1em;
+            font-size: smaller;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4em;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .sideContent {
+            padding-top: 2em;
+            margin-left: -40px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    list-style: none;
+
+                    a {
+                        font-weight: 300;
+                        font-size: 1.25em;
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    .side {
+                        width: 10px;
+                        height: 55px;
+                        background-color: transparent;
+                        border-radius: 0px 15px 15px 0px;
+                    }
+
+                    .ln {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        gap: 1em;
+                        color: #ffffff;
+                        padding: 0.5em 2em;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        width: 100%;
+                        font-size: medium;
+                    }
+                }
+
+                li.active {
+                    .side {
+                        background-color: #ffffff;
+                    }
+
+                    .ln {
+                        background-color: #ffffff;
+                        color: #0b0b45;
+                    }
+                }
+
+                li:hover {
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: background-color 0.5s ease, border 0.3s ease;
+
+                    .side {
+                        width: 10px;
+                        height: 55px;
+                        background-color: #ffffff;
+                        border-radius: 0px 15px 15px 0px;
+                    }
+
+                    .ln {
+                        background-color: #ffffff;
+                        color: #0b0b45;
+                    }
+                }
+            }
+        }
+    }
+
+    .Logout {
+        padding-bottom: 2em;
+
+        ul {
+            li {
+                display: flex;
+                gap: 1em;
+                list-style: none;
+                padding-bottom: 1em;
+                font-weight: 300;
+                font-size: medium;
+                cursor: pointer;
+
+                .ln {
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ==============================TopNav=========================== */
+
+.topNav {
+    width: calc(100vw - 260px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+
+    .search-back {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        .search {
+            width: 400px;
+            background-color: #f5f6fa;
+            border-radius: 50px;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+
+            img {
+                width: 20px;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .profile {
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+}

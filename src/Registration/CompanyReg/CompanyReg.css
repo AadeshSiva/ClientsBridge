@@ -1,0 +1,82 @@
+.companyreg-container {
+    width: calc(100vw - 260px);
+    flex-grow: 1;
+    max-height: 100%;
+    overflow: hidden;
+    margin-top: auto;
+    display: flex;
+    font-family: poppins;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.companyreg-tablecon {
+    flex-grow: 1;
+    background-color: white;
+    margin: 0 2em;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    border: 1px solid #d2d2d2;
+    border-bottom: 0;
+    overflow: scroll;
+    position: relative;
+    animation: scroll-up 0.2s forwards;
+}
+
+.companyreg-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: start;
+}
+
+.companyreg-thead th {
+    padding: 0.9em 0;
+    font-weight: 500;
+    font-size: smaller;
+    text-align: start;
+    padding-left: 4em;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+
+.companyreg-tbody tr {
+    border-bottom: 1px solid #d2d2d2;
+    font-size: smaller;
+    color: #656565;
+}
+
+.companyreg-tbody td {
+    padding-left: 4em;
+}
+
+.companyreg-img {
+    margin: 1.5em 0;
+    width: 3.5em;
+    aspect-ratio: 1;
+    border-radius: 7px;
+}
+
+.companyregviewbtn {
+    padding: 0.5em 3em;
+    border-radius: 9px;
+    outline: 1px solid #d3d3d3;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #656565;
+    text-decoration: none;
+}
+
+.companyregviewbtn:hover {
+    background-color: #eaeaea;
+}

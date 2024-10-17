@@ -1,0 +1,125 @@
+.transaction-container {
+    /* background-color: aqua; */
+    width: calc(100vw - 260px);
+    height: calc(100vh - 68px);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-top {
+    width: 90%;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transtopinner {
+    width: calc(100% / 3.3);
+    min-width: 260px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1.5em 1.5em;
+    border-radius: 15px;
+    color: #686868;
+    /* border: 0.2px solid #d2d2d2; */
+
+}
+
+.transtopimg {
+    width: 20%;
+}
+
+.transtopval {
+    font-size: large;
+    color: #000000;
+}
+
+.trantopic {
+    width: 90%;
+    font-family: poppins;
+    font-weight: bold;
+    padding: 0 0.3em;
+    margin-bottom: 0.5em;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tran-tablecon {
+    width: 90%;
+    border-radius: 15px 15px 0 0;
+    flex-grow: 1;
+    overflow: scroll;
+    background-color: white;
+    animation: scroll-up 0.2s forwards;
+    border: 1px solid #d2d2d2;
+    border-bottom: none;
+}
+
+.tran-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: start;
+}
+
+.tran-thead th {
+    padding: 0.9em 0;
+    font-weight: 500;
+    font-size: smaller;
+    text-align: start;
+    padding-left: 4em;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #d2d2d2;
+    background-color: white;
+}
+
+.tran-tbody tr {
+    border-bottom: 1px solid #d2d2d2;
+    font-size: smaller;
+    color: #656565;
+}
+
+.tran-tbody td {
+    padding-left: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.tran-tbody td:first-child {
+    padding-left: 3em;
+    display: flex;
+    gap: 0.2em;
+}
+
+.tranicon {
+    font-size: larger;
+    display: grid;
+    place-items: center;
+}
+
+.tranviewbtn {
+    padding: 0.5em 3em;
+    border-radius: 9px;
+    outline: 1px solid #d3d3d3;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #656565;
+    text-decoration: none;
+}
+
+.tranviewbtn:hover {
+    background-color: #eaeaea;
+}

@@ -1,0 +1,32 @@
+.registration-container {
+    width: calc(100vw - 260px);
+    height: calc(100vh - 68px);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #9c9c9c;
+}
+
+.tab-titles {
+    padding: 1em;
+}
+
+.tab-titles p {
+    display: inline-block;
+    margin: 0 7px;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.registrationtab {
+    color: rgb(34, 34, 34);
+}
+
+.active {
+    color: #000;
+}
