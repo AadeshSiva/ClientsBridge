@@ -11,7 +11,7 @@ a {
 }
 
 .tab-titles {
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .tab-titles p {
@@ -19,7 +19,7 @@ a {
     margin: 0 7px;
     cursor: pointer;
     font-family: poppins;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 

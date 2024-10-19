@@ -47,7 +47,7 @@ export default function AllOrders() {
                                     <td>{transaction.phone}</td>
                                     <td>{transaction.email}</td>
                                     <td>{transaction.country}</td>
-                                    <td><Link to={`/order/${transaction.id}`} className="tranviewbtn">View</Link></td>                                </tr>
+                                    <td><Link to={`/order/${transaction.id}`} className="orderviewbtn">View</Link></td>                                </tr>
                             ))}
 
                         </tbody>
