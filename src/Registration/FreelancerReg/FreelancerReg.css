@@ -17,20 +17,22 @@
 
 @keyframes cup {
   from {
-    /* scale: 0.5; */
+    opacity: 0.5;
     filter: blur(10px);
+    transform: translateY(5px);
   }
 
   to {
-    /* scale: 1; */
-        filter: blur(0);
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
   }
 }
 
 .freelancer-card {
   /* min-width: 240px; */
   width: 260px;
-  padding:3.5em 2em;
+  padding: 3.5em 2em;
   background-color: #ffffff;
   border-radius: 13px;
   display: flex;
@@ -43,9 +45,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation: cup 0.5s ease-in;
-  animation-timeline: view();
-  animation-range: Entry;
+  animation: cup 0.4s ease-in;
 }
 
 .freelancerdp {
