@@ -26,7 +26,7 @@ const SideMenu = () => {
         </header>
         <div className="sideContent">
           <ul>
-            <li className={location.pathname === "/"  ? "active" : ""}>
+            <li className={location.pathname === "/" || location.pathname === "dashboard"  ? "active" : ""}>
               <div className="side"></div>
               <Link className="ln" to="/">
                 <h2><LuLayoutDashboard/></h2>

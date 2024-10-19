@@ -14,7 +14,7 @@ const CompanyReg = () => {
                                 <th>Type</th>
                                 <th>Phone</th>
                                 <th>Email</th>
-                                <th></th>
+                                <th>More</th>
                             </tr>
                         </thead>
                         <tbody className="companyreg-tbody">

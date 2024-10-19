@@ -8,17 +8,31 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 2.5em;
   overflow-y: auto;
   padding: 0 1em;
   padding-bottom: 2em;
   scroll-behavior: smooth;
 }
 
+@keyframes cup {
+  from {
+    opacity: 0.5;
+    filter: blur(10px);
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
 .freelancer-card {
-  min-width: 200px;
-  width: 210px;
-  padding: 2em;
+  /* min-width: 240px; */
+  width: 260px;
+  padding: 3.5em 2em;
   background-color: #ffffff;
   border-radius: 13px;
   display: flex;
@@ -26,12 +40,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0.2em;
+  gap: 0.4em;
   background-image: url('../../assets/image/Pattern.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  animation: cup 0.4s ease-in;
 }
 
 .freelancerdp {
@@ -55,10 +69,10 @@
 }
 
 .freelancerviewbtn {
-  margin-top: 0.7em;
-  font-size: small;
+  margin-top: 1em;
+  font-size: smaller;
   color: #ffffff;
-  padding: 0.5em 2.5em;
+  padding: 0.7em 3em;
   border-radius: 50px;
   background-color: var(--blue);
   cursor: pointer;

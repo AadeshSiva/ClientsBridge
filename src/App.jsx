@@ -1,7 +1,8 @@
 import './App.css';
 
 import SideMenu from "./Nav/SideMenu.jsx";
-
+// -----------------------------------------DASHBOARD----------------------------------
+import Dashboard from './Dashboard/Dashboard.jsx';
 // -----------------------------------------REGISTRATION----------------------------------
 import Registration from './Registration/Reg.jsx';
 import FreelancerReg from './Registration/FreelancerReg/FreelancerReg.jsx';
@@ -31,6 +32,16 @@ export default function App() {
         <Router>
           <SideMenu />
           <Routes>
+            <Route index element={<Dashboard />} />
+            {/* -----------------------------------------DASHBOARD---------------------------------- */}
+            {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+
+            {/* <Route index element={<ClientReg />} />
+              <Route path='client' element={<ClientReg />} />
+              <Route path='freelancer' element={<FreelancerReg />} />
+              <Route path='freelancer/:id' element={<FreelancerProfile />} />
+              <Route path='company' element={<CompanyReg />} />
+            </Route> */}
             {/* -----------------------------------------REGISTRATION---------------------------------- */}
             <Route path='/registration' element={<Registration />} >
               <Route index element={<ClientReg />} />
