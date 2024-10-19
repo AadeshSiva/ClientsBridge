@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 /* font-family: "Nunito Sans"; */
-    /* font-family: "Nunito Sans",sans-serif; */
+/* font-family: "Nunito Sans",sans-serif; */
 * {
   padding: 0;
   margin: 0;
@@ -48,4 +49,22 @@ p {
 .admin-container {
   display: flex;
   background-color: var(--white);
+}
+
+/* ----------notformobile----------- */
+.notformobile {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  color: #8f8f8f;
+  z-index: 111111;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width:1100px) {
+  .notformobile {
+    display: none;
+  }
 }

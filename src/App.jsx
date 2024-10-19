@@ -28,6 +28,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 export default function App() {
   return (
     <>
+      <div className="notformobile">The admin is currently unavailable on mobile.</div>
       <main className="admin-container">
         <Router>
           <SideMenu />
